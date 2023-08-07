@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/logo_person"
+        android:enabled="true"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_applied"
+        android:icon="@drawable/logo_email"
+        android:enabled="true"
+        android:title="Applied" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/logo_person"
+        android:enabled="true"
+        android:title="Profile" />
+
+
+
+
+</menu>
