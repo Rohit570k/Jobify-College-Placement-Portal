@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="8dp"
-    app:cardCornerRadius="16dp">
+    app:cardCornerRadius="16dp"
+
+    app:cardPreventCornerOverlap="true">
 
     <!-- Add your dialog content here -->
     <LinearLayout
@@ -55,6 +56,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="1dp"
                 android:text="Job Type :  "
+                android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/position"
                 app:layout_constraintTop_toBottomOf="@+id/position" />
 
@@ -71,6 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:textColor="@color/black"
             android:text="CTC:" />
 
         <TextView
@@ -78,6 +81,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:textColor="@color/black"
             android:text="Location :" />
 
         <TextView
@@ -85,6 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
+            android:textColor="@color/black"
             android:text="Drive Date: " />
 
         <TextView
@@ -92,12 +97,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
+            android:textColor="@color/black"
             android:text="Job Description: " />
         <TextView
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="100dp"
+            android:textColor="@color/black"
             android:layout_margin ="8dp"
 
             android:text="We are hiring  " />
@@ -114,6 +121,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_weight="1"
+                android:elevation="10dp"
+                android:backgroundTint="@color/goodgrey"
                 android:text="Clear" />
 
             <Button
@@ -122,6 +131,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_weight="1"
+                android:elevation="10dp"
+                android:backgroundTint="@color/goodgrey"
                 android:text="Apply" />
 
         </LinearLayout>

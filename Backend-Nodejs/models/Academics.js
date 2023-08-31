@@ -11,6 +11,7 @@ const AcademicsSchema = new mongoose.Schema({
     // 12thyearof passing
     // college%
     // collegeyearofpassing
+    //title
 
 
     name: {
@@ -21,15 +22,18 @@ const AcademicsSchema = new mongoose.Schema({
     college: {
         type:String ,
         required: [true,'Please provide collegename'],
-        maxLength: 20,
     },
     rollnos: {
         type:String ,
         required: [true,'Please provide rollnos'],
         maxLength: 20,
     },
+    tenthmark: {
+        type:String ,
+        required: [true,'Please provide passing year'],
+    },
     tenthyearofpassing: {
-        type:Number ,
+        type:String ,
         required: [true,'Please provide passing year'],
     },
     twelfthmark: {
@@ -49,6 +53,15 @@ const AcademicsSchema = new mongoose.Schema({
     collegeyearofpassing: {
         type:String ,
         required: [true,'Please provide passing year'],
+        maxLength: 20,
+    },
+    nosofbacklog:{
+        type:String,
+        required:[true,'Provide backlog nos'],
+    },
+    title: {
+        type:String ,
+        required: [true,'Please provide title'],
         maxLength: 20,
     },
     createdBy: {

@@ -1,0 +1,62 @@
+[
+{
+    "companyImg": "https://media.licdn.com/dms/image/C560BAQFvBmw_6K21eg/company-logo_100_100/0/1646296074832?e=1700092800&v=beta&t=qp2n--lfdBgOnvdkDrfzwhN5JIEDY4D3R4JeulNmIG8",
+    "company": "Warp Tech Solutions",
+    "position": "Software Developer",
+    "status": "completed",
+    "jobType": "fulltime",
+    "jobLocation": "Bangalore",
+    "jobDescription": "Join our dynamic team!",
+    "jobCTC": "8 Lpa",
+    "createdBy": "646c7071e8db6fca55c5bb93",
+    "createdAt": "2023-01-15T10:30:00Z"
+},
+{
+    "companyImg": "https://graphicsfamily.com/wp-content/uploads/edd/2020/04/Realstate-and-construction-logo.jpg",
+    "company": "TAG Line Solutions",
+    "position": "Software Engineer",
+    "status": "completed",
+    "jobType": "fulltime",
+    "jobLocation": "Noida",
+    "jobDescription": "Join our innovative software team!",
+    "jobCTC": "9 Lpa",
+    "createdBy": "646c7071e8db6fca55c5bb93",
+    "createdAt": "2023-03-05T14:10:00Z"
+    },
+    {
+    "companyImg": "https://th.bing.com/th/id/OIP.lzP_KvjXLK0AYSA7Kji6bQHaDt?w=305&h=175&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+    "company": "GirTeka Corp.",
+    "position": "Cloud Architect",
+    "status": "completed",
+    "jobType": "fulltime",
+    "jobLocation": "Pune",
+    "jobDescription": "Shape the future of cloud solutions!",
+    "jobCTC": "11 Lpa",
+    "createdBy": "646c7071e8db6fca55c5bb93",
+    "createdAt": "2023-03-20T09:55:00Z"
+    },
+{
+    "companyImg": "https://media.licdn.com/dms/image/C4E0BAQF4B7H4duZuyg/company-logo_100_100/0/1578491924457?e=1700092800&v=beta&t=DOId6GHd2n5UNlrdXQa7UANufnKhedLRq3APcPH19bw",
+    "company": "R1 RCM Inc.",
+    "position": "Data Engineer",
+    "status": "completed",
+    "jobType": "fulltime",
+    "jobLocation": "Hyderabad",
+    "jobDescription": "Join us in transforming data!",
+    "jobCTC": "10 Lpa",
+    "createdBy": "646c7071e8db6fca55c5bb93",
+    "createdAt": "2023-02-10T15:45:00Z"
+},
+{
+    "companyImg": "https://media.licdn.com/dms/image/C4E0BAQHJUDZhWnP4MA/company-logo_100_100/0/1654088523608?e=1700092800&v=beta&t=LoQ9iumDU-jUfn23ghEb88B4tETw20D-FVNrkm-VhmI",
+    "company": "EPAM  Tech",
+    "position": "Project Manager",
+    "status": "completed",
+    "jobType": "fulltime",
+    "jobLocation": "Delhi",
+    "jobDescription": "Lead our projects to success!",
+    "jobCTC": "12 Lpa",
+    "createdBy": "646c7071e8db6fca55c5bb93",
+    "createdAt": "2023-02-25T08:20:00Z"
+}
+]

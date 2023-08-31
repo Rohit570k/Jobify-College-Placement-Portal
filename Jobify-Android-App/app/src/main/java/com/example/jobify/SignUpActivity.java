@@ -100,7 +100,7 @@ public class SignUpActivity extends AppCompatActivity {
                     progressBar.setVisibility(View.GONE);
                     // Show success message and navigate to next screen
                     Toast.makeText(SignUpActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                    Intent intent = new Intent(SignUpActivity.this, AcademicsActivity.class);
                     startActivity(intent);
                     finish();
                 }else{

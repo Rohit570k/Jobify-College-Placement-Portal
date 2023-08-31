@@ -1,5 +1,7 @@
 package com.example.jobify.WebService;
 
+import com.example.jobify.Models.Academics;
+import com.example.jobify.Models.AcademicsResponse;
 import com.example.jobify.Models.AllJobResponse;
 import com.example.jobify.Models.Application;
 import com.example.jobify.Models.AppliedJobResponse;
@@ -20,6 +22,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.PATCH;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 import retrofit2.http.QueryMap;
 
 public interface RetrofitApi {
@@ -52,8 +55,22 @@ public interface RetrofitApi {
     Call<AppliedStatus> showMyAppliedStats(@Header("Authorization") String authHeader);
 
 
-    @GET("/api/v1/application/selected/:jobId")
-    Call<AppliedJobResponse> getSelectedStudent(@Header("Authorization") String authHeader);
+    // GET /api/v1/application/selected/646f68abd3f549ea260ba1d9
+    // if found selected  list of selected user
+    // else error msg  No one with status code 400
+    @GET("/api/v1/application/selected/{jobId}")
+    Call<List<User>> getSelectedStudent(@Header("Authorization") String authHeader, @Path("jobId") String jobId);
+
+
+
+
+
+    //Academics detal model
+    @POST("/api/v1/academics/")
+    Call<AcademicsResponse> postAcademicsDetail(@Header("Authorization") String authHeader, @Body Academics academics);
+
+    @GET("/api/v1/academics/")
+    Call<AcademicsResponse> getMyAcademics(@Header("Authorization") String authHeader);
 
 
 

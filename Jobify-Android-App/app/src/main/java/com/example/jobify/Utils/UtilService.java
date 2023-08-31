@@ -21,7 +21,7 @@ import retrofit2.Response;
 
 public class UtilService {
 
-    public static final String BASE_URL = "https://d1fa-2405-201-3006-59cb-91c3-98a7-4ebb-edff.ngrok-free.app";
+    public static final String BASE_URL = "https://1882-2409-408a-2c07-cbc9-1001-ddb2-de68-3ce4.ngrok-free.app";
     public void hideKeyboard(View view , Context context)
     {
         // if nothing is currently

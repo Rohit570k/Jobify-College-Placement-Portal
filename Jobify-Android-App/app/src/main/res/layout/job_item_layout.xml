@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.cardview.CircularRevealCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="8dp"
+
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardUseCompatPadding="true"
+    style="?attr/materialCardViewElevatedStyle"
+    app:cardPreventCornerOverlap="false"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:foreground="#7B000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/background"
+
+            />
+
+        <TextView
+            android:id="@+id/companyNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/white"
+            android:padding ="5dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageview"
+            app:layout_constraintEnd_toEndOf="@+id/imageview"
+            app:layout_constraintStart_toStartOf="@+id/imageview"
+            app:layout_constraintTop_toTopOf="@+id/imageview"
+            tools:text="Sap Technologies" />
+        <!-- Job Type and Job Time -->
+        <LinearLayout
+            android:id="@+id/layoutJobTypeTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+
+            app:layout_constraintEnd_toEndOf="@+id/imageview"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/imageview"
+            app:layout_constraintTop_toBottomOf="@+id/companyNameTxt">
+
+            <!-- Job Type -->
+            <TextView
+                android:id="@+id/jobPositionTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="Android Developer"
+                android:maxWidth="150dp"
+                android:textColor="@android:color/white"
+                app:drawableTint="@color/ucrop_color_widget_background"
+                app:drawableStartCompat="@drawable/logo_jobtype" />
+
+            <!-- Job Time -->
+            <TextView
+                android:id="@+id/jobCTCTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                android:text="6 Lpa"
+
+                android:textColor="@android:color/white"
+                app:drawableTint="@color/ucrop_color_widget_background"
+                app:drawableStartCompat="@drawable/icon_currency" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+

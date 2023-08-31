@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".UI.Home.SelectedStudentActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:elevation="10dp"
+        android:fitsSystemWindows="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:navigationIcon="@drawable/icon_white_24"
+            app:title="Past Drives"
+            app:subtitle="Reports"
+            app:subtitleTextColor="@color/white"
+            app:titleTextColor="@color/white"
+
+            >
+
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/backgroundImg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:foreground="#83FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/upcomingDrivesRecylerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingEnd="5dp"
+            android:nestedScrollingEnabled="true"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/job_item_layout"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:elevation="16dp"
+            android:background="@drawable/curvedtopbordersolid"
+            >
+            <TextView
+                android:id="@+id/companyNameTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="5dp"
+                android:layout_gravity="center_horizontal"
+                tools:text="Sap Technologies"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/goodgrey"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/goodgrey"
+                />
+            <TextView
+                android:id="@+id/nosSelectedTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_margin="5dp"
+                android:paddingStart="5dp"
+                android:text="Selected Student : "
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/goodgrey"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/selectedStdRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:nestedScrollingEnabled="true"
+                android:scrollbars="vertical"
+                android:verticalScrollbarPosition="right"
+                android:paddingEnd="5dp"
+                android:orientation="horizontal"
+                tools:listitem="@layout/job_selected_layout"
+                />
+
+           <LinearLayout
+               android:visibility="gone"
+               android:id="@+id/notSelectedView"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_gravity="center"
+               android:layout_marginTop="20dp"
+               android:alpha="0.6"
+               >
+               <ImageView
+                   android:layout_width="170dp"
+                   android:layout_height="170dp"
+                   android:src="@drawable/image_not_selected"
+
+                   />
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Not Selected Anyone"
+                   android:textStyle="bold"
+                   android:layout_gravity="center_horizontal"
+
+                   android:fontFamily="@font/poppins_bold"/>
+           </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

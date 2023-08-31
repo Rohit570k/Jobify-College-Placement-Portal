@@ -1,0 +1,83 @@
+[
+    {
+      "name": "Rahul",
+      "email": "rahul@example.com",
+      "password": "secret",
+      "lastName": "Kumar",
+      "location": "selected",
+      "erpId": 789012
+    },
+    {
+      "name": "Priya",
+      "email": "priya@example.com",
+      "password": "secret",
+      "lastName": "Sharma",
+      "location": "selected",
+      "erpId": 345678
+    },
+    {
+      "name": "Amit",
+      "email": "amit@example.com",
+      "password": "secret",
+      "lastName": "Verma",
+      "location": "selected",
+      "erpId": 123456
+    },
+    {
+      "name": "Sneha",
+      "email": "sneha@example.com",
+      "password": "secret",
+      "lastName": "Gupta",
+      "location": "selected",
+      "erpId": 567890
+    },
+    {
+      "name": "Rajesh",
+      "email": "rajesh@example.com",
+      "password": "secret",
+      "lastName": "Singh",
+      "location": "selected",
+      "erpId": 234567
+    },
+    {
+      "name": "Anjali",
+      "email": "anjali@example.com",
+      "password": "secret",
+      "lastName": "Yadav",
+      "location": "selected",
+      "erpId": 456789
+    },
+    {
+      "name": "Manish",
+      "email": "manish@example.com",
+      "password": "secret",
+      "lastName": "Kaur",
+      "location": "selected",
+      "erpId": 678901
+    },
+    {
+      "name": "Pooja",
+      "email": "pooja@example.com",
+      "password": "secret",
+      "lastName": "Rana",
+      "location": "selected",
+      "erpId": 890123
+    },
+    {
+      "name": "Sanjay",
+      "email": "sanjay@example.com",
+      "password": "secret",
+      "lastName": "Mehta",
+      "location": "selected",
+      "erpId": 123456
+    },
+    {
+      "name": "Smita",
+      "email": "smita@example.com",
+      "password": "secret",
+      "lastName": "Patel",
+      "location": "selected",
+      "erpId": 789012
+    }
+  ]
+  

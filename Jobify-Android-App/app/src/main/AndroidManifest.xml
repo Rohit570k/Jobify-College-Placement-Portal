@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
 
     <application
         android:allowBackup="true"
@@ -15,7 +17,10 @@
         android:theme="@style/Theme.Jobify"
         tools:targetApi="31">
         <activity
-            android:name=".UI.Profile.PastDrive"
+            android:name=".UI.Home.SelectedStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AcademicsActivity"
             android:exported="false" />
         <activity
             android:name=".UI.Myjob.AppliedJobActivity"
@@ -51,6 +56,25 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+
+        <service android:name=".Service.NotificationService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/notification_24" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/primaryColor" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="Testing" />
+
     </application>
 
 </manifest>

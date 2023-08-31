@@ -1,11 +1,15 @@
 package com.example.jobify.UI.Home;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
@@ -42,6 +46,11 @@ public class AllJobsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityAllJobsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        Toolbar toolbar = binding.toolbar;
+        setSupportActionBar(toolbar);
+
+
         jobList = new ArrayList<>();
 
         binding.editTextSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -106,7 +115,7 @@ public class AllJobsActivity extends AppCompatActivity {
                 }else{
                     // parse the response body …
                     APIError error = UtilService.parseError(response);
-                    Log.d("error message", error.getMsg());
+                    Log.d(getLocalClassName(),""+ error.getMsg());
                     Toast.makeText(AllJobsActivity.this,error.getMsg()+" ",Toast.LENGTH_SHORT).show();
 
                 }
@@ -135,6 +144,25 @@ public class AllJobsActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         binding.recyclerViewCards.setLayoutManager(linearLayoutManager);
         jobAdapter.notifyDataSetChanged();
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.alljob_menu_item, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == android.R.id.home) {
+            onBackPressed(); // Handle the "Up" button click
+            return true;
+        } else if (id == R.id.completed_drive) {
+            startActivity(new Intent(AllJobsActivity.this,SelectedStudentActivity.class));
+           // Toast.makeText(this, "Menu clicked", Toast.LENGTH_SHORT).show();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

@@ -1,0 +1,63 @@
+[
+      {
+        "companyImg": "https://th.bing.com/th?id=OIP.yfI-ZWFQbN-ar6qZudcHpgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2",
+        "company": "Amazon",
+        "position": "Software Tester",
+        "status": "upcoming",
+        "jobType": "fulltime",
+        "jobLocation": "Seattle",
+        "jobDescription": "Shape the future of e-commerce!",
+        "jobCTC": "11 Lpa",
+        "createdBy": "646c7071e8db6fca55c5bb93",
+        "createdAt": "2023-06-25T08:20:00Z"
+      },
+      {
+        "companyImg": "https://th.bing.com/th/id/OIP.iUuKofalq-s9wS_kfq9e8QHaFj?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        "company": "Netflix",
+        "position": "Content Engineer",
+        "status": "upcoming",
+        "jobType": "fulltime",
+        "jobLocation": "Los Gatos",
+        "jobDescription": "Work on streaming media innovations!",
+        "jobCTC": "9 Lpa",
+        "createdBy": "646c7071e8db6fca55c5bb93",
+        "createdAt": "2023-06-01T11:40:00Z"
+      },
+      {
+        "companyImg": "https://1.bp.blogspot.com/-khB07BkP1iE/YCG2t5Qz4UI/AAAAAAAAASI/6Hy_dOtVgCITcSIuWtrWukD-K1HO-ZJEgCLcBGAsYHQ/w640-h350/28845065f1cb7bf52b9d57d3720ebf95.jpg",
+        "company": "Tesla",
+        "position": "Electrical Engineer",
+        "status": "upcoming",
+        "jobType": "fulltime",
+        "jobLocation": "Palo Alto",
+        "jobDescription": "Revolutionize electric vehicles!",
+        "jobCTC": "14 Lpa",
+        "createdBy": "646c7071e8db6fca55c5bb93",
+        "createdAt": "2023-05-15T13:15:00Z"
+      },
+      {
+        "companyImg": "https://th.bing.com/th/id/OIP.RrYr3Dhq_t_kpWmvI6z98AHaEk?pid=ImgDet&w=665&h=411&rs=1",
+        "company": "Adobe",
+        "position": "UI/UX Designer",
+        "status": "upcoming",
+        "jobType": "fulltime",
+        "jobLocation": "San Jose",
+        "jobDescription": "Create visually stunning user experiences!",
+        "jobCTC": "11.5 Lpa",
+        "createdBy": "646c7071e8db6fca55c5bb93",
+        "createdAt": "2023-04-30T16:30:00Z"
+      },
+      {
+        "companyImg": "https://th.bing.com/th/id/OIP.8-yY6HDrXTAA6KaZYPIDwAHaHO?w=155&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7",
+        "company": "AI Technologies",
+        "position": "Machine Ln Engineer",
+        "status": "upcoming",
+        "jobType": "fulltime",
+        "jobLocation": "Bangalore",
+        "jobDescription": "Work on cutting-edge AI projects!",
+        "jobCTC": "11.5 Lpa",
+        "createdBy": "646c7071e8db6fca55c5bb93",
+        "createdAt": "2023-04-10T13:15:00Z"
+      }
+
+]

@@ -46,6 +46,10 @@ public class AppliedJobActivity extends AppCompatActivity {
         binding = ActivityAppliedJobBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        setSupportActionBar(binding.toolbar);
+
+
+
         applicationList = new ArrayList<>();
 
         binding.editTextSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -105,7 +109,7 @@ public class AppliedJobActivity extends AppCompatActivity {
                 }else{
                     // parse the response body …
                     APIError error = UtilService.parseError(response);
-                    Log.d("error message", error.getMsg());
+                    Log.d("error message", ""+error.getMsg());
                     Toast.makeText(AppliedJobActivity.this,error.getMsg()+" ",Toast.LENGTH_SHORT).show();
 
                 }
@@ -127,5 +131,11 @@ public class AppliedJobActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);
         binding.recyclerViewCards.setLayoutManager(linearLayoutManager);
         adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
     }
 }

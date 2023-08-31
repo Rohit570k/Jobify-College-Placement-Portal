@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "353829599763",
+    "project_id": "jobify-ab580",
+    "storage_bucket": "jobify-ab580.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353829599763:android:8f324eaa924f54bad0dde6",
+        "android_client_info": {
+          "package_name": "com.example.jobify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353829599763-dr40h8diud4nilmiieugrvpnr9nrtplr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jobify",
+            "certificate_hash": "84c13161106b6f52279438161f6b89ccf158dc5f"
+          }
+        },
+        {
+          "client_id": "353829599763-np5r5f9notlcjrngr35t752g6tnbndm6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVRTP8319eMCHZ4gT-_5Cbonh8gSYLmys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353829599763-np5r5f9notlcjrngr35t752g6tnbndm6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -124,9 +124,7 @@ public class JobPopupDialog extends Dialog {
                 if(response.isSuccessful() && response.code() == 201 && response.body()!=null){
                     Application application = response.body();
                     Log.d("TAG", "onViewCreated: "+ new Gson().toJson(application));
-                    Toast.makeText(getContext(),"Applied in drive",Toast.LENGTH_SHORT).show();
-
-
+                    Toast.makeText(getContext(),"Applied in: "+application.getCompany(),Toast.LENGTH_LONG).show();
                 }else{
                     // parse the response body …
                     APIError error = UtilService.parseError(response);

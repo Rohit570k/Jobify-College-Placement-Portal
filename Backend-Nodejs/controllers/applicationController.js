@@ -27,7 +27,7 @@ const createApplication = async(req,res)=>{
     req.body.applicant = req.user.userId;
     req.body.company = job.company;
     const application = await Application.create(req.body);
-    res.status(StatusCodes.CREATED).json({ application });
+    res.status(StatusCodes.CREATED).json( application );
 }
 
 //Particular student applied in nos of jobs 
@@ -133,13 +133,21 @@ const getApplicationByJob = async(req,res)=>{
 
 //Fetched by Tpo
 const getSelectedStudent = async(req,res)=>{
-    const { id:jobId} = req.params;
+    const { jobId} = req.params;
 
-    const applicants = await Application.find({applied:jobId,status:'selected'})
-                            .populate('applicant')
+    const selectedApplications = await Application.find({applied:new mongoose.Types.ObjectId(jobId),status:'selected'})
+                            .populate('applicant', '-password');// Use '-password' to exclude the password field
+
+    if (selectedApplications.length === 0) {
+        throw new BadRequestError("No one"); // Not found any slected student
+    }
+    
+    const selectedStudents = selectedApplications.map(application => application.applicant);
+
     res
     .status(StatusCodes.OK)
-    .json({applicants , totalApplicants: applicants.length});
+   // .json({applicants , totalApplicants: applicants.length});
+   .json(selectedStudents)
 
 
 }

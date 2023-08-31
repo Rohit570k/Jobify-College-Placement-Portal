@@ -9,7 +9,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+
         android:orientation="vertical">
+        <!-- Header -->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="300dp">
@@ -91,8 +93,9 @@
                 android:paddingStart="12dp"
                 android:paddingEnd="4dp"
                 android:background="@drawable/circularbordersolid"
-                android:ems="10"
-                android:inputType="text"
+                android:inputType="textNoSuggestions"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
                 android:textSize="16dp"
                 android:hint="Search for Drive here"
                 android:textColorHint="@color/goodgrey"
@@ -108,6 +111,18 @@
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingStart="5dp"
+            android:text="Drives in last 5 month"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/goodgrey"
+             />
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="250dp"
@@ -121,7 +136,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingStart="5dp"
+            android:text="Type of Drives"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/goodgrey"
+            />
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="250dp"
@@ -135,7 +159,16 @@
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingStart="5dp"
+            android:text="Drives Status"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/goodgrey"
+            />
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="250dp"
@@ -148,6 +181,36 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingStart="5dp"
+            android:text="Upcoming Drives"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/goodgrey"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:paddingStart="5dp"
+            android:text="Prepare Well, These Drive will happen soon"
+            android:textStyle="bold"
+            android:textColor="@color/goodgrey"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/upcomingDrivesRecylerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingEnd="5dp"
+            android:nestedScrollingEnabled="true"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/job_item_layout"
+            />
 
 
     </LinearLayout>

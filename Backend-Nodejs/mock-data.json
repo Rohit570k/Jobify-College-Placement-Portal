@@ -1,352 +1,62 @@
 [
   {
-    "company": "Devpulse",
-    "position": "Civil Engineer",
-    "status": "ongoing",
-    "jobType": "internship",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "4.5 Lpa",
-    "createdAt": "2022-12-31T22:01:01Z",
-    "jobLocation": "Japan"
-  },
-  {
-    "company": "Ntag",
-    "position": "Senior Financial Analyst",
+    "companyImg": "https://media.licdn.com/dms/image/C560BAQGlW5qlsWZHIw/company-logo_100_100/0/1629351342247?e=1700092800&v=beta&t=VfmRbJ8wsfupEW9Q4mZCNSo4W1EQHf83YCGuK4UFnKg",
+    "company": "Sim Tech ",
+    "position": "Software Engineer",
     "status": "ongoing",
     "jobType": "fulltime",
+    "jobLocation": "Bangalore",
+    "jobDescription": "Join Tech SIM as a Software Engineer and play a pivotal role in designing and developing cutting-edge software solutions. Collaborate with cross-functional teams to analyze requirements, architect solutions, and implement robust code. Utilize your expertise in Java and Spring to create scalable and high-performance applications. Contribute to code reviews, perform testing, and ensure code quality. Bring your innovative ideas to the table and contribute to the growth of our dynamic software team. With a competitive CTC ranging from 9 Lpa to 12 Lpa, seize the opportunity to shape the future of software development.",
+    "jobCTC": "9.5 Lpa",
     "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "9 Lpa",
-    "createdAt": "2022-09-07T20:08:37Z",
-    "jobLocation": "Japan"
+    "createdAt": "2023-06-15T10:30:00Z"
   },
   {
-    "company": "Aimbu",
-    "position": "Software Consultant",
+    "companyImg": "https://media.licdn.com/dms/image/C560BAQEGsbroYsa3yg/company-logo_100_100/0/1519902907612?e=1700092800&v=beta&t=aHrs72QAjjFHYiGoxxUf9nnr7HSgNtq1ThDYDfWebhc",
+    "company": "Zemso Solutions",
+    "position": "Data Scientist",
     "status": "ongoing",
-    "jobType": "remote",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "4.5 Lpa",
-    "createdAt": "2022-07-03T02:02:32Z",
-    "jobLocation": "Mumbai"
-  },
-  {
-    "company": "Rhyzio",
-    "position": "Analyst Programmer",
-    "status": "completed",
-    "jobType": "remote",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "4.5 Lpa",
-    "createdAt": "2022-08-12T20:23:41Z",
-    "jobLocation": "Hyderabad"
-  },
-  {
-    "company": "Livetube",
-    "position": "Nurse Practicioner",
-    "status": "completed",
     "jobType": "fulltime",
+    "jobLocation": "Hyderabad",
+    "jobDescription": "Be a part of DataTech Solutions as a Data Scientist and dive into the realm of data analysis and machine learning. Work on data preprocessing, model development, and predictive analytics to extract meaningful insights from complex datasets. Collaborate with data engineers and software developers to deploy machine learning models into production systems. Leverage your expertise in Python, machine learning libraries, and data visualization tools to drive data-driven decision-making. With an attractive CTC ranging from 8 Lpa to 11 Lpa, join us in harnessing the power of data for business success.",
+    "jobCTC": "10 Lpa",
     "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "5 Lpa",
-    "createdAt": "2023-05-13T17:47:23Z",
-    "jobLocation": "Banglore"
+    "createdAt": "2023-05-30T14:45:00Z"
   },
   {
-    "company": "Wordware",
-    "position": "Assistant Media Planner",
-    "status": "upcoming",
-    "jobType": "internship",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "5 Lpa",
-    "createdAt": "2022-08-21T22:21:13Z",
-    "jobLocation": "New York"
-  },
-  {
-    "company": "Thoughtbridge",
-    "position": "Computer Systems Analyst IV",
-    "status": "completed",
-    "jobType": "parttime",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "12 Lpa",
-    "createdAt": "2023-03-08T21:05:06Z",
-    "jobLocation": "New York"
-  },
-  {
-    "company": "Devpoint",
-    "position": "Physical Therapy Assistant",
-    "status": "completed",
+    "companyImg": "https://media.licdn.com/dms/image/C4D0BAQEE73wQBVodMQ/company-logo_100_100/0/1677598469595?e=1700092800&v=beta&t=amNkvy2_CYzxrmZzEiHGgdpabrxsU8W7giDdtdul6lo",
+    "company": "Epam Innovative",
+    "position": "UX/UI Designer",
+    "status": "ongoing",
     "jobType": "fulltime",
+    "jobLocation": "Delhi",
+    "jobDescription": "Join Epam Inc. as a UX/UI Designer and shape exceptional user experiences for our products. Collaborate with product managers, developers, and stakeholders to understand user needs and design intuitive interfaces. Create wireframes, prototypes, and visually appealing designs that align with brand identity. Stay updated with design trends and user preferences to deliver innovative solutions. Leverage your proficiency in design tools and principles to contribute to the development of user-centered products. With a competitive CTC ranging from 7 Lpa to 10 Lpa, be a part of our creative team and leave a lasting impact on user satisfaction.",
+    "jobCTC": "8.5 Lpa",
     "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "9 Lpa",
-    "createdAt": "2022-08-25T16:52:38Z",
-    "jobLocation": "Mohali"
+    "createdAt": "2023-06-22T09:20:00Z"
   },
   {
-    "company": "Kwimbee",
-    "position": "Developer III",
-    "status": "completed",
-    "jobType": "internship",
-    "createdBy": "646c7071e8db6fca55c5bb93",
+    "companyImg": "https://media.licdn.com/dms/image/C4D0BAQF-RIoeeMTMKQ/company-logo_100_100/0/1664197007563?e=1700092800&v=beta&t=fHPUewlPlJwBgU-hR9KLwr7AybreQ7aaoDIoIrdBYt8",
+    "company": "HCL TECH",
+    "position": "Cloud Engineer",
+    "status": "ongoing",
+    "jobType": "fulltime",
+    "jobLocation": "Pune",
+    "jobDescription": "Join HCL as a Cloud Engineer and play a vital role in building and maintaining scalable cloud infrastructure. Collaborate with DevOps and development teams to design, implement, and manage cloud solutions using leading platforms like AWS, Azure, or Google Cloud. Automate deployment processes, monitor system performance, and troubleshoot issues. Utilize your expertise in cloud technologies, scripting, and configuration management to optimize resource utilization and ensure reliability. With an attractive CTC ranging from 10 Lpa to 12 Lpa, contribute to the advancement of cloud-based services and be part of our innovative tech team.",
     "jobCTC": "6 Lpa",
-    "createdAt": "2023-05-15T02:01:23Z",
-    "jobLocation": "Mohali"
-  },
-  {
-    "company": "Oyope",
-    "position": "Graphic Designer",
-    "status": "ongoing",
-    "jobType": "internship",
     "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "3 Lpa",
-    "createdAt": "2022-08-19T10:15:41Z",
-    "jobLocation": "Pune"
+    "createdAt": "2023-07-18T11:55:00Z"
   },
   {
-    "company": "Jaxspan",
-    "position": "Professor",
-    "status": "upcoming",
-    "jobType": "remote",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "4 Lpa",
-    "createdAt": "2022-10-29T19:26:56Z",
-    "jobLocation": "Mohali"
-  },
-  {
-    "company": "Devbug",
-    "position": "Internal Auditor",
-    "status": "upcoming",
-    "jobType": "internship",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "5 Lpa",
-    "createdAt": "2022-11-08T12:28:16Z",
-    "jobLocation": "New York"
-  },
-  {
-    "company": "Oloo",
-    "position": "Account Executive",
-    "status": "ongoing",
-    "jobType": "parttime",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "5 Lpa",
-    "createdAt": "2023-04-09T20:31:43Z",
-    "jobLocation": "Hyderabad"
-  },
-  {
-    "company": "Zooveo",
-    "position": "Director of Sales",
-    "status": "upcoming",
-    "jobType": "parttime",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "12 Lpa",
-    "createdAt": "2023-02-01T16:48:31Z",
-    "jobLocation": "Mumbai"
-  },
-  {
-    "company": "Aivee",
-    "position": "Quality Engineer",
-    "status": "upcoming",
-    "jobType": "fulltime",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "12 Lpa",
-    "createdAt": "2022-11-05T19:55:03Z",
-    "jobLocation": "New York"
-  },
-  {
-    "company": "Twitterbridge",
-    "position": "Design Engineer",
-    "status": "ongoing",
-    "jobType": "parttime",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "4.5 Lpa",
-    "createdAt": "2022-09-16T23:33:55Z",
-    "jobLocation": "Banglore"
-  },
-  {
-    "company": "Oyoba",
-    "position": "Social Worker",
-    "status": "ongoing",
-    "jobType": "remote",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "6 Lpa",
-    "createdAt": "2022-11-30T10:58:53Z",
-    "jobLocation": "Mumbai"
-  },
-  {
-    "company": "Kaymbo",
-    "position": "Mechanical Systems Engineer",
-    "status": "completed",
-    "jobType": "fulltime",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "3 Lpa",
-    "createdAt": "2023-04-01T19:52:38Z",
-    "jobLocation": "Pune"
-  },
-  {
-    "company": "Realcube",
-    "position": "Marketing Manager",
-    "status": "ongoing",
-    "jobType": "remote",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "4.5 Lpa",
-    "createdAt": "2022-11-10T23:14:02Z",
-    "jobLocation": "Banglore"
-  },
-  {
-    "company": "Dablist",
-    "position": "Environmental Tech",
-    "status": "upcoming",
-    "jobType": "remote",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "6 Lpa",
-    "createdAt": "2022-07-01T07:16:34Z",
-    "jobLocation": "Hyderabad"
-  },
-  {
-    "company": "Twinte",
-    "position": "Budget/Accounting Analyst IV",
-    "status": "ongoing",
-    "jobType": "remote",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "5 Lpa",
-    "createdAt": "2023-03-13T08:53:39Z",
-    "jobLocation": "Banglore"
-  },
-  {
-    "company": "Zoomlounge",
-    "position": "Business Systems Development Analyst",
+    "companyImg": "https://media.licdn.com/dms/image/C560BAQHm6fW23kOyrw/company-logo_200_200/0/1519906149908?e=1700092800&v=beta&t=dwQj_S1Grcrea8wZqn9l9zLiFBWiod_mny0HKTggoss",
+    "company": "CodeNicely",
+    "position": "Android Developer",
     "status": "ongoing",
     "jobType": "fulltime",
+    "jobLocation": "Raipur",
+    "jobDescription": "CodeNicely is seeking a passionate Android Developer to join our team. Develop and implement models, and solutions for various applications. Collaborate with cross-functional teams to gather data,  Utilize your expertise in Java and Spring to create scalable and high-performance applications. Contribute to code reviews, perform testing, and ensure code quality. Bring your innovative ideas to the table and contribute to the growth of our dynamic software team. With a competitive CTC ranging from 9 Lpa to 12 Lpa, seize the opportunity to shape the future of software development.",
+    "jobCTC": "3.5 Lpa",
     "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "5 Lpa",
-    "createdAt": "2023-01-18T21:14:51Z",
-    "jobLocation": "Mohali"
-  },
-  {
-    "company": "Jaloo",
-    "position": "Senior Financial Analyst",
-    "status": "upcoming",
-    "jobType": "fulltime",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "5 Lpa",
-    "createdAt": "2023-03-30T14:16:20Z",
-    "jobLocation": "Pune"
-  },
-  {
-    "company": "Viva",
-    "position": "Tax Accountant",
-    "status": "ongoing",
-    "jobType": "internship",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "6 Lpa",
-    "createdAt": "2023-05-24T02:29:02Z",
-    "jobLocation": "Hyderabad"
-  },
-  {
-    "company": "Jayo",
-    "position": "Chief Design Engineer",
-    "status": "ongoing",
-    "jobType": "remote",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "4.5 Lpa",
-    "createdAt": "2022-10-06T19:28:29Z",
-    "jobLocation": "Mohali"
-  },
-  {
-    "company": "Plambee",
-    "position": "Assistant Media Planner",
-    "status": "upcoming",
-    "jobType": "internship",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "4.5 Lpa",
-    "createdAt": "2022-06-14T21:58:29Z",
-    "jobLocation": "Mohali"
-  },
-  {
-    "company": "Vinte",
-    "position": "Senior Cost Accountant",
-    "status": "ongoing",
-    "jobType": "remote",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "12 Lpa",
-    "createdAt": "2023-04-20T09:04:03Z",
-    "jobLocation": "Mohali"
-  },
-  {
-    "company": "Tagopia",
-    "position": "Assistant Media Planner",
-    "status": "upcoming",
-    "jobType": "remote",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "3 Lpa",
-    "createdAt": "2022-12-28T16:07:10Z",
-    "jobLocation": "Mohali"
-  },
-  {
-    "company": "Dabvine",
-    "position": "Cost Accountant",
-    "status": "ongoing",
-    "jobType": "remote",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "12 Lpa",
-    "createdAt": "2022-07-06T05:54:19Z",
-    "jobLocation": "Mohali"
-  },
-  {
-    "company": "Gabtype",
-    "position": "Statistician IV",
-    "status": "upcoming",
-    "jobType": "internship",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "4.5 Lpa",
-    "createdAt": "2022-08-09T17:24:28Z",
-    "jobLocation": "Mohali"
-  },
-  {
-    "company": "Tazzy",
-    "position": "Research Associate",
-    "status": "upcoming",
-    "jobType": "parttime",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "5 Lpa",
-    "createdAt": "2023-04-28T14:51:52Z",
-    "jobLocation": "Mohali"
-  },
-  {
-    "company": "Wordpedia",
-    "position": "Chemical Engineer",
-    "status": "completed",
-    "jobType": "parttime",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "4.5 Lpa",
-    "createdAt": "2023-04-12T01:10:02Z",
-    "jobLocation": "Banglore"
-  },
-  {
-    "company": "Innotype",
-    "position": "General Manager",
-    "status": "ongoing",
-    "jobType": "parttime",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "9 Lpa",
-    "createdAt": "2022-07-17T08:24:03Z",
-    "jobLocation": "Banglore"
-  },
-  {
-    "company": "Skyndu",
-    "position": "Internal Auditor",
-    "status": "ongoing",
-    "jobType": "fulltime",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "12 Lpa",
-    "createdAt": "2022-10-01T05:07:00Z",
-    "jobLocation": "Chandigarh"
-  },
-  {
-    "company": "DabZ",
-    "position": "Operator",
-    "status": "completed",
-    "jobType": "remote",
-    "createdBy": "646c7071e8db6fca55c5bb93",
-    "jobCTC": "12 Lpa",
-    "createdAt": "2022-12-23T21:33:01Z",
-    "jobLocation": "Chandigarh"
+    "createdAt": "2023-07-10T13:30:00Z"
   }
 ]

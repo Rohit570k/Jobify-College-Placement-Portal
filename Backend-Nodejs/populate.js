@@ -4,16 +4,18 @@ dotenv.config()
 
 import connectDB from './db/connect.js';
 import Job from './models/Job.js';
+import User from "./models/User.js";
+import Application from "./models/Application.js";
 
 const start = async () => {
   try {
     await connectDB(process.env.MONGO_URL);
-     await Job.deleteMany();
+     //await Job.deleteMany();
 
     const jsonProducts = JSON.parse(
       await readFile(new URL('./mock-data.json', import.meta.url))
     );
-    await Job.create(jsonProducts);
+    //await Job.create(jsonProducts);
     console.log('Success!!!!');
     process.exit(0);
   } catch (error) {

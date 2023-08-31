@@ -99,7 +99,7 @@ public class AppliedFragment extends Fragment {
                 }else{
                     // parse the response body …
                     APIError error = UtilService.parseError(response);
-                    Log.d("error message", error.getMsg());
+                    Log.d("error message",""+ error.getMsg());
                     Toast.makeText(getContext(),error.getMsg()+" ",Toast.LENGTH_SHORT).show();
 
                 }

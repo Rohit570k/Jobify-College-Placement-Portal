@@ -9,15 +9,15 @@ import mongoose from 'mongoose';
 import moment from 'moment';
 
 const create = async (req,res)=>{
-//     const {  } = req.body;
+  //   const {  } = req.body;
 
-//   if ( true) {
-//     throw new BadRequestError('Please provide all values');
-//   }
+  // if ( true) {
+  //   throw new BadRequestError('Please provide all values');
+  // }
 
   const alreadyCreated = await Academics.findOne({createdBy: req.user.userId});
     if(alreadyCreated){
-        throw new BadRequestError(`User already created `)
+        throw new BadRequestError(`User already uploaded details once`)
     }
 
   req.body.createdBy = req.user.userId;
@@ -27,6 +27,7 @@ const create = async (req,res)=>{
 
 const getMyAcademics = async (req,res) =>{
     const academics = await Academics.findOne({createdBy: req.user.userId});
+    console.log(academics)
     res
     .status(StatusCodes.OK)
     .json({academics });

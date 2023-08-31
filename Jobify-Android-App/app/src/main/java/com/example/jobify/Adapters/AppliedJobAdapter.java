@@ -1,5 +1,6 @@
 package com.example.jobify.Adapters;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,7 +15,9 @@ import com.example.jobify.Models.Application;
 import com.example.jobify.Models.AppliedApplication;
 import com.example.jobify.Models.Job;
 import com.example.jobify.R;
+import com.google.gson.Gson;
 
+import java.lang.reflect.GenericSignatureFormatError;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -40,7 +43,8 @@ public class AppliedJobAdapter extends RecyclerView.Adapter<AppliedJobAdapter.Vi
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         AppliedApplication application = applicationList.get(position);
         Job jobItem = application.getApplied();
-
+        Log.i("TAG","adp:  "+ new Gson().toJson(jobItem));
+        if(jobItem==null) return;
         // Bind the data to the views in the ViewHolder
         holder.companyName.setText(jobItem.getCompany());
         holder.jobPosition.setText(jobItem.getPosition());

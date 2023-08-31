@@ -110,17 +110,19 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/poppins_bold"
-                        android:text="Rohit Kumar"
+                        tools:text="Rohit Kumar"
                         android:textColor="#424242"
                         android:textSize="21sp"
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/titleTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins"
-                        android:text="Android Developer"
-                        android:textSize="14sp" />
+                        tools:text="Android Developer"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="16sp" />
 
 
                 </LinearLayout>
@@ -163,7 +165,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="csdcjnlcma;"
+                                android:text="Profile setting"
                                 android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -199,7 +201,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="2dp"
-                                android:text="qcxjnbsdkljcwa;"
+                                android:text="Selection Ratio"
                                 android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
@@ -245,7 +247,7 @@
                     android:fontFamily="@font/poppins"
                     android:gravity="center"
                     android:padding="13dp"
-                    android:text="Experience"
+                    android:text="Academics"
                     android:textAllCaps="true"
                     android:textColor="@color/fadeprimaryColor"
                     android:textSize="14sp"
@@ -254,12 +256,13 @@
 
             </LinearLayout>
 
-            <!--Bootom Cards with sections-->
+            <!--Bottom Cards with sections-->
             <LinearLayout
                 android:id="@+id/personalinfo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="visible">
 
                 <!--About Me Card-->
                 <LinearLayout
@@ -343,7 +346,7 @@
                             android:text="Edit"
                             android:textColor="#FFCF66"
                             android:layout_marginEnd="10dp"
-                            android:textSize="14sp" />
+                            android:textSize="16sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -396,7 +399,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
                                 android:textColor="@color/goodgrey"
-                                android:text="sanskar@theindianappguy.com"
+                                android:text="colege@rungta.ac.in"
                                 android:textSize="15sp"
                                 android:fontFamily="@font/poppins" />
                         </LinearLayout>
@@ -420,7 +423,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
-                                android:text="Leeds, United Kingdom"
+                                android:text="Bhilai, Chattisgarh"
                                 android:textSize="15sp"
                                 android:textColor="@color/goodgrey"
                                 android:fontFamily="@font/poppins" />
@@ -431,215 +434,198 @@
 
             </LinearLayout>
 
-            <!--Experience Bottom Cards-->
-            <LinearLayout
-                android:id="@+id/experience"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+            <!--Academics Cards-->
 
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/circularbordersolid"
-                    android:orientation="horizontal"
-                    android:padding="20dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:padding="6dp"
-                            android:src="@drawable/logo_person" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
-                            android:orientation="vertical">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins"
-                                android:text="Android Developer"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="3dp"
-                                android:fontFamily="@font/poppins"
-                                android:text="at TheIndianAppGuy"
-                                android:textSize="12sp" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:layout_width="9dp"
-                            android:layout_height="9dp"
-                            android:padding="1dp"
-                            android:src="@drawable/logo_person" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
-                            android:text="Sep 2010 - Jan 2013"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
+                    android:id="@+id/experience"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:background="@drawable/circularbordersolid"
-                    android:orientation="horizontal"
-                    android:padding="20dp">
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center_vertical">
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
 
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:padding="6dp"
-                            android:src="@drawable/logo_person" />
-
-                        <LinearLayout
+                        <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
+                            android:text="Academics Details"
+                            android:textSize="17sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textStyle="bold" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/editAcademicsBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edit"
+                            android:textColor="#FFCF66"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <!--Collegename-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/circular_grey_bordersolid"
                             android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins"
-                                android:text="Android Developer"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                android:text="College Name"
+                               />
 
                             <TextView
+                                android:id="@+id/collegeNameTxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="3dp"
-                                android:fontFamily="@font/poppins"
-                                android:text="at TheIndianAppGuy"
-                                android:textSize="12sp" />
+                                tools:text="Rungta College of Engineering and Technolgy"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:textColor="@color/goodgrey"
+                                android:fontFamily="@font/poppins" />
                         </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:layout_width="9dp"
-                            android:layout_height="9dp"
-                            android:padding="1dp"
-                            android:src="@drawable/logo_person" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
-                            android:text="Sep 2010 - Jan 2013"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/circularbordersolid"
-                    android:orientation="horizontal"
-                    android:padding="20dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:padding="6dp"
-                            android:src="@drawable/logo_person" />
-
+                        <!--Roll nos-->
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/circular_grey_bordersolid"
                             android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/poppins"
-                                android:text="Android Developer"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                android:text="Roll number"
+                                />
+
+                            <TextView
+                                android:id="@+id/rollNosTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="301302219155"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:textColor="@color/goodgrey"
+                                android:fontFamily="@font/poppins" />
+                        </LinearLayout>
+
+                        <!--10th nos-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/circular_grey_bordersolid"
+                            android:orientation="vertical">
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="3dp"
-                                android:fontFamily="@font/poppins"
-                                android:text="at TheIndianAppGuy"
-                                android:textSize="12sp" />
+                                android:textStyle="bold"
+                                android:text="10th marks"
+                                />
+
+                            <TextView
+                                android:id="@+id/tenthmarkTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="85% | 2016"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:textColor="@color/goodgrey"
+                                android:fontFamily="@font/poppins" />
                         </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:gravity="center_vertical">
-
-                        <ImageView
-                            android:layout_width="9dp"
-                            android:layout_height="9dp"
-                            android:padding="1dp"
-                            android:src="@drawable/logo_person" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
+                        <!--12th nos-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
-                            android:text="Sep 2010 - Jan 2013"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-                    </LinearLayout>
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/circular_grey_bordersolid"
+                            android:orientation="vertical">
 
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="Twelfth mark "
+                                />
+
+                            <TextView
+                                android:id="@+id/twelfthmarkTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="85% | 2018"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:textColor="@color/goodgrey"
+                                android:fontFamily="@font/poppins" />
+                        </LinearLayout>
+                        <!--College nos-->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/circular_grey_bordersolid"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:text="College mark until now"
+                                />
+
+                            <TextView
+                                android:id="@+id/collegeMarkTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                tools:text="85% | 2023"
+                                android:textSize="15sp"
+                                android:maxLines="1"
+                                android:ellipsize="end"
+                                android:textColor="@color/goodgrey"
+                                android:fontFamily="@font/poppins" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
                 </LinearLayout>
 
-            </LinearLayout>
+
 
 
         </LinearLayout>

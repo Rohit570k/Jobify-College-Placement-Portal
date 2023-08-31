@@ -12,22 +12,24 @@ import android.widget.Toast;
 import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.PagerSnapHelper;
+import androidx.recyclerview.widget.SnapHelper;
 
+import com.example.jobify.Adapters.UpcomingJobAdapter;
 import com.example.jobify.Models.APIError;
 import com.example.jobify.Models.AllJobResponse;
 import com.example.jobify.Models.CredentialResponse;
+import com.example.jobify.Models.Job;
 import com.example.jobify.Models.JobStatus.JobStatus;
 import com.example.jobify.Models.JobStatus.JobTypes;
 import com.example.jobify.Models.JobStatus.MonthlyApplication;
 import com.example.jobify.Models.JobStatus.Status;
 import com.example.jobify.Models.User;
-import com.example.jobify.R;
 import com.example.jobify.Utils.UtilService;
 import com.example.jobify.WebService.RetrofitApi;
 import com.example.jobify.WebService.RetrofitClient;
 import com.example.jobify.databinding.FragmentHomeBinding;
-import com.example.jobify.databinding.FragmentProfileBinding;
-import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
@@ -40,7 +42,9 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -79,6 +83,7 @@ public class HomeFragment extends Fragment {
         });
 
         apiCallShowStats();
+        getUpcomingJobs();
 
 
 
@@ -106,7 +111,7 @@ public class HomeFragment extends Fragment {
                 }else{
                     // parse the response body …
                     APIError error = UtilService.parseError(response);
-                    Log.d("error message", error.getMsg());
+                    Log.d("error message", ""+error.getMsg());
                     Toast.makeText(getContext(),error.getMsg()+" ",Toast.LENGTH_SHORT).show();
 
                 }
@@ -205,5 +210,66 @@ public class HomeFragment extends Fragment {
         binding.pieChartTypes.setCenterText("Job Types");
         binding.pieChartTypes.animate();
         binding.pieChartTypes.invalidate(); // Refresh the chart
+    }
+
+    private void getUpcomingJobs() {
+        RetrofitApi retrofitApi = RetrofitClient.getRetrofitApiService();
+        String authToken="";
+        CredentialResponse userCred = new UtilService().getUserFromSharedPref(getContext());
+        if(userCred!=null){
+            authToken=userCred.getToken();
+        }
+
+        // Create a query parameter map
+        Map<String, String> queryParams = new HashMap<>();
+        queryParams.put("status", "upcoming");
+        queryParams.put("sort", "latest");
+
+
+        Call<AllJobResponse> call = retrofitApi.getAllJobs("Bearer "+authToken, queryParams);
+        call.enqueue(new Callback<AllJobResponse>() {
+            @Override
+            public void onResponse(Call<AllJobResponse> call, Response<AllJobResponse> response) {
+
+                if(response.isSuccessful()&& response.code()==200&& response.body()!=null){
+                    List<Job> upcomingJobList = response.body().getJobs();
+
+                    if(!upcomingJobList.isEmpty() ) {
+                        setUpHorizonatalRecylerView(upcomingJobList);
+                    }
+                }else{
+                    // parse the response body …
+                    APIError error = UtilService.parseError(response);
+                    Log.d("error message", ""+error.getMsg());
+                    Toast.makeText(getContext(),error.getMsg()+" ",Toast.LENGTH_SHORT).show();
+
+                }
+
+
+            }
+
+
+
+            @Override
+            public void onFailure(Call<AllJobResponse> call, Throwable t) {
+                // Show error message
+                Log.d("onFailure", ""+t.getMessage());
+                Toast.makeText(getContext(), "Error: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
+    }
+
+    private void setUpHorizonatalRecylerView(List<Job> upcomingJobList) {
+        UpcomingJobAdapter adapter = new UpcomingJobAdapter(upcomingJobList, getContext(), jobitem -> Toast.makeText(getContext(), jobitem.getCompany(), Toast.LENGTH_SHORT).show());
+        binding.upcomingDrivesRecylerView.setAdapter(adapter);
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false);
+        binding.upcomingDrivesRecylerView.setLayoutManager(linearLayoutManager);
+        SnapHelper snapHelper = new PagerSnapHelper();
+        snapHelper.attachToRecyclerView(binding.upcomingDrivesRecylerView);
+        binding.upcomingDrivesRecylerView.setPreserveFocusAfterLayout(true);
     }
 }
